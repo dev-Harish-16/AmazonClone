@@ -1,0 +1,12 @@
+<div class="card template-card p-3 border-0 shadow-lg card-transition" style="height: 100%">
+  <ng-content select="[head]"></ng-content>
+  <div class="row row-cols-2">
+    <div class="col" *ngFor="let product of data">
+      <div class="card-img card-transition" style="padding: 5%">
+        <img [src]=" product.url" class="w-100" />
+        <p class="fs-6">{{ product.cardTitle }}</p>
+      </div>
+    </div>
+    <a class="text-decoration-none" href="#">See all offers</a>
+  </div>
+</div>

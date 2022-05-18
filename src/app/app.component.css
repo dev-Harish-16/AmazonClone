@@ -1,0 +1,36 @@
+ul > li {
+  list-style: none;
+  line-height: 2;
+  font-size: 0.9rem;
+}
+.aboutUs>ul > li {
+  opacity: 0.7;
+}
+/* countries */
+.countries-div {
+  background-color: #232f3e;
+}
+.countries > li {
+  list-style: none;
+  color: white;
+  font-size: 0.8rem;
+}
+.small-text>h6,.small-text>li{
+    font-size: 0.7rem;
+}
+.name{
+  color: white;
+}
+.sec-nav{
+  background-color: #232f3e;
+}
+.card-transition{
+  transition: .3s;
+}
+.card-transition:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.navbar-nav .nav-border{
+  padding: 0px 15px;
+}

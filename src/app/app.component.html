@@ -1,0 +1,562 @@
+<div class="main ">
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid py-0 my-0">
+      <a class="navbar-brand pt-2" href="#"><img src="../assets/Amazon-logo-black-removebg-preview.png" alt="logo"
+          style="width: 100px" />.in</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse py-0 my-0" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto text-center d-flex justify-content-center align-items-center py-0 my-0">
+          <li class="nav-item nav-border d-none d-lg-block">
+            <a class="nav-link text-white" href="#"><span class="d-flex flex-column">
+                <span class="text-start py-0">Hello</span>
+                <span class="text-start py-0 my-0">
+                  <i class="fas fa-map-marker-alt fa-lg me-1"></i>
+                  <span class="fw-bold ">Select your address</span>
+                </span>
+              </span></a>
+          </li>
+          <li class="nav-item nav-border  d-none d-lg-block">
+            <div class="input-group">
+              <span class="input-group-text">All<i class="fas fa-caret-down"></i>
+              </span>
+              <input type="text" class="form-control" style="width: 390px" />
+              <span class="input-group-text btn-warning"><i class="fas fa-search fa-lg"></i></span>
+            </div>
+          </li>
+          <li class="nav-item d-flex flex-row nav-border ">
+            <a class="nav-link" href="#"><img src="../assets/india.svg" alt="flag" class="" style="width: 27px" /></a><i
+              class="fas fa-caret-down text-white ms-2 pt-4"></i>
+          </li>
+          <li class="nav-item nav-border">
+            <a class="nav-link text-white " href="#">Accounts & Lists <i class="fas fa-caret-down"></i>
+            </a>
+          </li>
+          <li class="nav-item nav-border">
+            <a class="nav-link text-white " href="#">Returns & Orders </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-link text-white  text-decoration-none" href="#"><img
+                src="../assets/shopping_cart_white_24dp.svg" alt="cart" c style="width: 40px" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- sec-nav -->
+
+  <nav class="d-none d-lg-block sec-nav ">
+      <ul class="navbar-nav d-flex flex-row justify-content-between" >
+        <li class="nav-item active">
+          <a class="nav-link name" href="#"><span><i class="fas fa-bars fa-2x me-1"></i></span>All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name" href="#">Best Sellers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name" href="#">Mobiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name" href="#">Today's Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name" href="#">Customer Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name" href="#">Electronics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name" href="#">Prime <i class="fas fa-caret-down text-white"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name" href="#">Fashion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link name" href="#">New Releases</a>
+        </li>
+        <p class="name fs-4">
+          Great Republic Day Sale | SHOP NOW
+          <i class="fas fa-chevron-right fa-lg"></i>
+        </p>
+      </ul>
+  </nav>
+
+
+  <!-- carousel -->
+
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-inner " >
+      <div class="carousel-item active">
+        <img src="../assets/caro-1.jpg" class="d-block w-100" />
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/caro-2.jpg" class="d-block w-100" />
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/caro-3.jpg" class="d-block w-100" />
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/caro-4.jpg" class="d-block w-100" />
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/caro-6.jpg" class="d-block w-100" />
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel" data-bs-slide="prev">
+      <p class="carousel-control-prev-icon bg-dark rounded-pill"></p>
+    </a>
+    <a class="carousel-control-next" href="#carousel" data-bs-slide="next">
+      <p class="carousel-control-next-icon bg-dark rounded-pill"></p>
+    </a>
+  </div>
+
+  <!-- cards -->
+
+  <div class="cards1 container-fluid pt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+      <!--Great offers on your first purchase-->
+      <div class="col" style="padding-bottom: 5%">
+        <div class="card h-100 border-0 shadow-lg card-transition" style="padding: 20px">
+          <div class="card-title mb-2">
+            <h4 class="text-center">Great offers on your first purchase</h4>
+          </div>
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG21/Desk_Category_Card_2x_New._SY608_CB646980821_.jpg"
+            height="300rem" />
+          <a href="#" class="mt-3">Explore Now</a>
+        </div>
+      </div>
+      <!-- Up to 70% off | Amazon Brands & more -->
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="brands">
+          <h4 class="text-center" head>Up to 70% off | Amazon Brands & more</h4>
+        </app-products>
+      </div>
+      <!--Up to 70% off | Restyle your home & kitchen  -->
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="kitchen">
+          <h4 class="text-center" head>
+            Up to 70% off | Restyle your home & kitchen
+          </h4>
+        </app-products>
+      </div>
+      <!--Sign in for your best experience  -->
+      <div class="col" style="padding-bottom: 5%">
+        <div class="card h-100 border-0 shadow-lg card-transition" style="padding: 20px">
+          <div class="card-title">
+            <h4 class="text-center">Sign in for your best experience</h4>
+          </div>
+          <div class="card-body">
+            <button class="btn btn-warning" style="border-radius: 10px; width: 100%">
+              Sign in securely
+            </button>
+          </div>
+          <img src="https://i.pinimg.com/564x/56/a4/3d/56a43dfee5a75a125503fb1f2944c1ba.jpg" />
+        </div>
+      </div>
+      <!-- Starting ₹29 | Kitchen essentials -->
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="kitchen_2">
+          <h4 class="text-center" head>Starting ₹29 | Kitchen essentials</h4>
+        </app-products>
+      </div>
+      <!-- Up to 80% off | Pocket-friendly fashion -->
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="fashion">
+          <h4 class="text-center" head>
+            Up to 80% off | Pocket-friendly fashion
+          </h4>
+        </app-products>
+      </div>
+      <!-- Up to 70% off | Amazon Brands & more -->
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="brands">
+          <h4 class="text-center" head>Up to 70% off | Amazon Brands & more</h4>
+        </app-products>
+      </div>
+      <!-- Up to 70% off | Restyle your home & kitchen -->
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="kitchen">
+          <h4 class="text-center" head>
+            Up to 70% off | Restyle your home & kitchen
+          </h4>
+        </app-products>
+      </div>
+    </div>
+  </div>
+
+  <!--small images-1-->
+
+  <div class="container-fluid">
+    <div class="d-flex gap-3 pb-3 px-3 ">
+      <h4>Shop deals in top categories</h4>
+      <span><a href="#">Explore all categories</a></span>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 pb-5" style="list-style: none;">
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/JanART22/D36032823_JanART22_WL_Teaser_DesktopShoveler_200X200_2._CB648390036_.jpg"
+            alt="ads" class="d-block mx-auto">
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/JAN_ART_22_CEPC/DesktopShoveler_EA_1._CB648908770_.jpg"
+            alt="ads" class="d-block mx-auto">
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL_HMT/JANART_DESKTOP/DesktopShoveler._CB648654735_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/LA/naireshm_LA/JanART_22/NavIcon-english-200x200._CB647195913_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/HVE/JanART22/Graphics/DesktopShoveler1x-200-200_CB64896045._CB648898369_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Baby/FJanuary/JanArt/Cons/DesktopShoveler_200x200._CB647195053_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+    </div>
+  </div>
+
+  <!-- cards-2 -->
+
+  <div class="container-fluid pt-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="shoes">
+          <h4 class="text-center" head>Up to 80% off | Shoes</h4>
+        </app-products>
+      </div>
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="HouseholdSupplies">
+          <h4 class="text-center" head>Up to 45% off | Household supplies</h4>
+        </app-products>
+      </div>
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="Furniture">
+          <h4 class="text-center" head>Up to 70% off | Furniture & mattresses</h4>
+        </app-products>
+      </div>
+      <div class="col" style="padding-bottom: 5%">
+        <app-products [data]="Home">
+          <h4 class="text-center" head>
+            Up to 70% off | Home shopping from local shops
+          </h4>
+        </app-products>
+      </div>
+    </div>
+  </div>
+
+  <!-- ads-1-->
+
+  <div class=" p-4 mb-3 bg-light">
+    <img
+      src="https://images-eu.ssl-images-amazon.com/images/G/31/img16/vineet/Amazon-Pay-Later/Jan_22/Jan_ART_22/Teaser_2/1150x321_GW-editorial._CB647122799_.jpg"
+      alt="ads" class="d-block mx-auto w-75" />
+  </div>
+
+  <!-- small images-2 -->
+
+  <section class="container-fluid">
+    <div class="d-flex gap-3  px-3">
+      <h4>Up to 40% off | Refurbished smart watches</h4>
+      <span><a href="#">Explore all categories</a></span>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5" style="list-style: none">
+      <div class="col">
+        <li class="card-transition">
+          <img src="https://m.media-amazon.com/images/I/61W4meSdVQL._AC_SY200_.jpg" alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img src="https://m.media-amazon.com/images/I/31x-J+tVmgS._AC_SY200_.jpg" alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img src="https://m.media-amazon.com/images/I/51RIxsmfcIS._AC_SY200_.jpg" alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img src="https://m.media-amazon.com/images/I/61RdLS1lGBL._AC_SY200_.jpg" alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img src="https://m.media-amazon.com/images/I/61f-B-uQI2L._AC_SY200_.jpg" alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <!-- <div class="col">
+
+        <li class="card-transition">
+          <img src="https://m.media-amazon.com/images/I/51ToMhOMj+L._AC_SY200_.jpg" alt="ads" class="d-block mx-auto" />
+        </li>
+      </div> -->
+    </div>
+
+  </section>
+
+  <!-- ads-2 -->
+
+  <div class="mb-3 p-4" style="padding-bottom: 4%">
+    <img src="https://m.media-amazon.com/images/G/31/AMS/IN/970X250-_desktop_banner.jpg" alt="ads"
+      class="d-block mx-auto align-middle w-75" />
+  </div>
+
+  <!-- small images-3 -->
+
+  <div class="container-fluid">
+    <div class="d-flex gap-3 pb-3 px-3">
+      <h4>Brands in focus | Great Republic Day sale</h4>
+      <span><a href="#">Explore all categories</a></span>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 pb-5" style="list-style: none">
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/JanART22/1x_New_DesktopShoveler_updated._CB647028746_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Grocery/DesktopShoveler_1_200x200._CB647223446_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/PC/Art/Intel_Desktop_Shoveler_1x._CB646973747_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Grocery/DesktopShoveler_2_200x200._CB647223446_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <div class="col">
+        <li class="card-transition">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/PC/Art/LG_Gram_Desktop_1x._CB646974761_.jpg"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div>
+      <!-- <div class="col">
+        <li class="card-transition">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Beauty/JanART/200X200._CB646980557_.png"
+            alt="ads" class="d-block mx-auto" />
+        </li>
+      </div> -->
+    </div>
+  </div>
+
+  <!--Sign in  -->
+
+  <div class="text-center container-fluid" style="font-size: 0.9rem">
+    <hr />
+    <div class="pt-3">
+      <p>See personalized recommendations</p>
+      <button class="btn btn-warning fw-bold" style="font-size: 0.8rem; width: 230px">
+        Sign in
+      </button>
+      <p class="pt-2">
+        New customer?<span><a href="#" class="text-decoration-none ms-1">Start here</a></span>
+      </p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="footer ">
+    <!-- back-to-top -->
+    <div class="text-center text-white py-3" style="background-color: #37465a; font-size: 0.9rem">
+      Back to top
+    </div>
+
+    <!--aboutUs  -->
+    <div class="d-sm-flex justify-content-around text-white py-5 px-3" style="background-color: #232f3e">
+      <!-- first -->
+      <div class="aboutUs">
+        <ul>
+          <h6>Get to Know Us</h6>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Press Releases</li>
+          <li>Amazon Cares</li>
+          <li>Gift a Smile</li>
+        </ul>
+      </div>
+      <!-- second -->
+      <div class="aboutUs">
+        <ul>
+          <h6>Connect with Us</h6>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+      <!-- third -->
+      <div class="aboutUs">
+        <ul>
+          <h6>Make Money with Us</h6>
+          <li>Sell on Amazon</li>
+          <li>Sell under Amazon Accelerator</li>
+          <li>Amazon Global Selling</li>
+          <li>Become an Affiliate</li>
+          <li>Fulifilment by Amazon</li>
+          <li>Advertise Your Ptoducts</li>
+          <li>Amazon Pay on Merchants</li>
+        </ul>
+      </div>
+      <!-- four -->
+      <div class="aboutUs">
+        <ul>
+          <h6>Let Us Help You</h6>
+          <li>COVID-19 and Amazon</li>
+          <li>Your Account</li>
+          <li>Returns Centre</li>
+          <li>100% Purchase Protection</li>
+          <li>Amazon App Download</li>
+          <li>Amazon Assistant Download</li>
+          <li>Help</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="m-0" style="opacity: 0.7" />
+
+    <!--countries-->
+    <div class="countries-div pt-4">
+      <div class="d-sm-flex justify-content-center gap-5 ps-5 ps-sm-0">
+        <div class="mx-1">
+          <img src="../assets/Amazon-logo-black-removebg-preview.png" alt="amazon-logo" style="width: 100px" />
+        </div>
+        <button class="btn btn-transparent border border-white text-white rounded-3 mx-1">
+          <i class="fas fa-globe text-white me-2"></i> English
+          <i class="fas fa-caret-down ms-1"></i>
+        </button>
+      </div>
+      <div class="countries d-sm-flex flex-wrap justify-content-center gap-3 p-5 text-white">
+        <li>Australia</li>
+        <li>Brazil</li>
+        <li>Canada</li>
+        <li>China</li>
+        <li>France</li>
+        <li>Germany</li>
+        <li>Italy</li>
+        <li>Japan</li>
+        <li>Mexico</li>
+        <li>NetherLands</li>
+        <li>Poland</li>
+        <li>Singapore</li>
+        <li>spain</li>
+        <li>Turkey</li>
+        <li>United Arab Emirates</li>
+        <li>United Kingdom</li>
+        <li>United states</li>
+      </div>
+    </div>
+
+    <!-- Services-->
+    <div class="d-sm-flex justify-content-around text-white py-4 px-5" style="background-color: #131a22">
+      <!-- first -->
+      <div class="text-start">
+        <ul class="small-text">
+          <h6>AbeBooks</h6>
+          <li>About Us</li>
+          <li>&nbsp;</li>
+          <h6>Designer</h6>
+          <li>Fashion Brands</li>
+        </ul>
+      </div>
+      <!-- second -->
+      <div>
+        <ul class="small-text">
+          <h6>Amazon Web Services</h6>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>&nbsp;</li>
+          <h6>Amazon Business</h6>
+          <li>Everything For</li>
+          <li>our Business</li>
+        </ul>
+      </div>
+      <!-- third -->
+      <div>
+        <ul class="small-text">
+          <h6>Audible</h6>
+          <li>Sell on Amazon</li>
+          <li>Sell under Amazon Accelerator</li>
+          <li>&nbsp;</li>
+          <h6>Prime Now</h6>
+          <li>2-Hour Delivery</li>
+          <li>on Every items</li>
+        </ul>
+      </div>
+      <!-- four -->
+      <div>
+        <ul class="small-text">
+          <h6>DPREview</h6>
+          <li>Digital</li>
+          <li>Your Account</li>
+          <li>&nbsp;</li>
+          <h6>Amazon Prime Music</h6>
+          <li>75 million songs,ad-free</li>
+          <li>Over 10 million podcast episodes</li>
+        </ul>
+      </div>
+      <!-- five -->
+      <div>
+        <ul class="small-text">
+          <h6>IMDb</h6>
+          <li>Movies, TV</li>
+          <li>& Celebrities</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- disclaimer -->
+    <div class="text-start py-3 px-5 d-sm-flex justify-content-center text-white gap-4"
+      style="background-color: #131a22; font-size: 0.9rem">
+      <p>Conditions of Use & Sale</p>
+      <p>Privacy Notices</p>
+      <p>Interest-Based Ads</p>
+      <p>© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+    </div>
+  </div>
+</div>
