@@ -28,7 +28,7 @@ ul > li {
   transition: .3s;
 }
 .card-transition:hover{
-  transform: scale(1.1);
+  transform: scale(1.03);
   cursor: pointer;
 }
 
